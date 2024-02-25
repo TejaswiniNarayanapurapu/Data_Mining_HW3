@@ -8,58 +8,62 @@ def question1():
     answers = {}
 
     # type: bool (True/False)
-    answers["(a)"] = -1
+    answers["(a)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "True, Agglomerative hierarchical clustering procedures are better able to handle outliers than k-means because they do not require an initial guess for cluster centroids"
 
     # type: bool (True/False)
-    answers["(b)"] = -1
+    answers["(b)"] = 0
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "Different runs of agglomerative hierarchical clustering procedures can also produce different clusterings due to variations in the merging process."
 
     # type: bool (True/False)
-    answers["(c)"] = -1
+    answers["(c)"] = 0
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = ""
+    answers["(c) explain"] = "K-means clustering is not necessarily the most efficient clustering algorithm in terms of time and memory, as it depends on various factors such as data distribution and dimensionality"
 
     # type: bool (True/False)
     answers["(d)"] = -1
 
     # type: explanatory string (at least four words)
-    answers["(d) explain"] = ""
+    answers["(d) explain"] = "During a post-processing step for K-means, when a cluster is split by picking one of the points as a new centroid, the SSE (Sum of Squared Errors) of the clustering typically increases. This is because splitting a cluster tends to redistribute points, potentially increasing the overall dispersion within the clusters and thus increasing the SSE."
 
     # type: bool (True/False)
-    answers["(e)"] = -1
+    answers["(e)"] = 0
 
     # type: explanatory string (at least four words)
-    answers["(e) explain"] = ""
+    answers["(e) explain"] = "When clustering a dataset using K-means, whenever SSE decreases, cohesion increases, not necessarily whenever SSE decreases."
 
     # type: bool (True/False)
-    answers["(f)"] = -1
+    answers["(f)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(f) explain"] = ""
+    answers["(f) explain"] = "When clustering a dataset using K-means, whenever SSB (the between sum of squares) increases, separation increases, as SSB measures the separation between clusters."
 
     # type: bool (True/False)
-    answers["(g)"] = -1
+    answers["(g)"] = 0
 
     # type: explanatory string (at least four words)
-    answers["(g) explain"] = ""
+    answers["(g) explain"] = "Cohesion and separation are not independent for K-means; improving cohesion (smaller SSE) can indeed improve separation (larger SSB), as they are complementary measures."
 
     # type: bool (True/False)
-    answers["(h)"] = -1
+    answers["(h)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(h) explain"] = ""
+    answers["(h) explain"] = " In K-means clustering, the sum of SSE (within-cluster sum of squares) and BSS (between sum of squares) is constant, as they collectively represent the total variance of the data"
 
     # type: bool (True/False)
-    answers["(i)"] = -1
+    answers["(i)"] = 0
 
     # type: explanatory string (at least four words)
-    answers["(i) explain"] = ""
+    answers["(i) explain"] = "Increasing cohesion (smaller SSE) in K-means clustering does not necessarily imply an increase in separation, as cohesion and separation are related but distinct concepts.
+
+
+
+"
 
     return answers
 
