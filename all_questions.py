@@ -59,11 +59,8 @@ def question1():
     answers["(i)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(i) explain"] = "Increasing cohesion (smaller SSE) in K-means clustering does not necessarily imply an increase in separation, as cohesion and separation are related but distinct concepts.
+    answers["(i) explain"] = "Increasing cohesion (smaller SSE) in K-means clustering does not necessarily imply an increase in separation, as cohesion and separation are related but distinct concepts."
 
-
-
-"
 
     return answers
 
