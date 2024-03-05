@@ -105,7 +105,7 @@ def question3():
     answers["(a) SSE"] = "4*R^2"
 
     # type: a string that evaluates to a float
-    answers["(b) SSE"] = "4*squart(a^2+b^2)"
+    answers["(b) SSE"] = "4*a^2+b^2"
 
     # type: a string that evaluates to a float
     answers["(c) SSE"] = "10*R^2"
@@ -120,28 +120,28 @@ def question4():
     answers = {}
 
     # type: int
-    answers["(a) Circle (a)"] = 0
+    answers["(a) Circle (a)"] = 1
 
     # type: int
-    answers["(a) Circle (b)"] = 0
+    answers["(a) Circle (b)"] = 1
 
     # type: int
-    answers["(a) Circle (c)"] = 0
+    answers["(a) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "optimal clustering"
 
     # type: int
-    answers["(b) Circle (a)"] = 0
+    answers["(b) Circle (a)"] = 1
 
     # type: int
-    answers["(b) Circle (b)"] = 0
+    answers["(b) Circle (b)"] = 1
 
     # type: int
-    answers["(b) Circle (c)"] = 0
+    answers["(b) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "Given the comparable distances between circles A and B, and between circles B and C, each centroid should ideally converge within its respective original circle."
 
     # type: int
     answers["(c) Circle (a)"] = 0
@@ -150,10 +150,10 @@ def question4():
     answers["(c) Circle (b)"] = 0
 
     # type: int
-    answers["(c) Circle (c)"] = 0
+    answers["(c) Circle (c)"] = 2
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = ""
+    answers["(c) explain"] = "This distribution ensures optimal clustering by ensuring that each centroid remains closest to the cluster it originated from."
 
     return answers
 
@@ -165,16 +165,16 @@ def question5():
     answers = {}
 
     # type: set
-    answers["(a)"] = set()
+    answers["(a)"] = {"Group A","Group B"}
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "The shortest path separating the top left point in Group A from the top right point in Group B is the distance between them."
 
     # type: set
-    answers["(b)"] = set()
+    answers["(b)"] = {'Group A','Group C'}
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "The longest distance between them is the one separating the bottom left point in Group C from the bottom right point in Group A."
 
     return answers
 
@@ -186,19 +186,18 @@ def question6():
     answers = {}
 
     # type: set
-    answers["(a) core"] = set()
+    answers["(a) core"] = {'B','C','E','F','G','I','L','M'}
 
     # type: set
-    answers["(a) boundary"] = set()
+    answers["(a) boundary"] = {'D','G'}
 
     # type: set
-    answers["(a) noise"] = set()
+    answers["(a) noise"] = {'A','H'}
+    # type: set
+    answers["(b) cluster 1"] = {'B','C','D','E','F','G'}
 
     # type: set
-    answers["(b) cluster 1"] = set()
-
-    # type: set
-    answers["(b) cluster 2"] = set()
+    answers["(b) cluster 2"] = {'I','J','L','M'}
 
     # type: set
     answers["(b) cluster 3"] = set()
@@ -207,19 +206,19 @@ def question6():
     answers["(b) cluster 4"] = set()
 
     # type: set
-    answers["(c)-a core"] = set()
+    answers["(c)-a core"] = {'B','C','D','E','F','G','I','J','L','M'}
 
     # type: set
-    answers["(c)-a boundary"] = set()
+    answers["(c)-a boundary"] = {'A','H'}
 
     # type: set
     answers["(c)-a noise"] = set()
 
     # type: set
-    answers["(c)-b cluster 1"] = set()
+    answers["(c)-b cluster 1"] = {'A','B','C','D','E','F','G','H','I','J','L','M'}
 
     # type: set
-    answers["(c)-b cluster 2"] = set()
+    answers["(c)-b cluster 2"] = {'A'}
 
     # type: set
     answers["(c)-b cluster 3"] = set()
@@ -237,16 +236,17 @@ def question7():
     answers = {}
 
     # type: string
-    answers["(a)"] = ""
+    answers["(a)"] = "cluster 4"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "Cluster 4 exhibits the highest entropy, suggesting it encompasses a varied combination of land cover types."
 
     # type: string
-    answers["(b)"] = ""
+    answers["(b)"] = "cluster 1"
+
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "Cluster 1 demonstrates the lowest entropy, suggesting a greater degree of uniformity in the composition of land cover categories within it."
 
     return answers
 
@@ -258,7 +258,7 @@ def question8():
     answers = {}
 
     # type: string
-    answers["(a) Matrix 1"] = ""
+    answers["(a) Matrix 1"] = "Dataset-z"
 
     # type: explanatory string (at least four words)
     answers["(a) explain diag entries, Matrix 1"] = ""
@@ -267,7 +267,7 @@ def question8():
     answers["(a) explain non-diag entries, Matrix 1"] = ""
 
     # type: string
-    answers["(a) Matrix 2"] = ""
+    answers["(a) Matrix 2"] = "Dataset-x"
 
     # type: explanatory string (at least four words)
     answers["(a) explain diag entries, Matrix 2"] = ""
@@ -276,7 +276,7 @@ def question8():
     answers["(a) explain non-diag entries, Matrix 2"] = ""
 
     # type: string
-    answers["(a) Matrix 3"] = ""
+    answers["(a) Matrix 3"] = "Dataset-y"
 
     # type: explanatory string (at least four words)
     answers["(a) explain diag entries, Matrix 3"] = ""
@@ -285,16 +285,16 @@ def question8():
     answers["(a) explain non-diag entries, Matrix 3"] = ""
 
     # type: string
-    answers["(b) Row 1"] = ""
+    answers["(b) Row 1"] = "Cluster-a"
 
     # type: string
-    answers["(b) Row 2"] = ""
+    answers["(b) Row 2"] = "Cluster-b"
 
     # type: string
-    answers["(b) Row 3"] = ""
+    answers["(b) Row 3"] = "Cluster-c"
 
     # type: string
-    answers["(b) Row 4"] = ""
+    answers["(b) Row 4"] = "Cluster-d"
 
     # type: explanatory string (at least four words)
     answers["(b) Row 1 explain"] = ""
@@ -318,19 +318,19 @@ def question9():
     answers = {}
 
     # type: list
-    answers["(a)"] = []
+    answers["(a)"] = ['hierarchical', 'overlapping', 'partial']
 
     # type: list
-    answers["(b)"] = []
+    answers["(b)"] = ['partitional', 'exclusive', 'complete']
 
     # type: list
-    answers["(c)"] = []
+    answers["(c)"] = ['partitional', 'fuzzy', 'complete']
 
     # type: list
-    answers["(d)"] = []
+    answers["(d)"] = ['hierarchical', 'overlapping', 'partial']
 
     # type: list
-    answers["(e)"] = []
+    answers["(e)"] = ['partitional', 'exclusive', 'complete']
 
     # type: explanatory string (at least four words)
     answers["(e) explain"] = ""
@@ -345,25 +345,25 @@ def question10():
     answers = {}
 
     # type: string
-    answers["(a) Figure (a)"] = ""
+    answers["(a) Figure (a)"] = "No"
 
     # type: string
-    answers["(a) Figure (b)"] = ""
+    answers["(a) Figure (b)"] = "Yes"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "In Figure B, DBSCAN can effectively identify facial representations by evaluating the spatial density of the data points."
 
     # type: string
-    answers["(b) Figure (a)"] = ""
+    answers["(b) Figure (a)"] = "No"
 
     # type: string
-    answers["(b) Figure (b)"] = ""
+    answers["(b) Figure (b)"] = "Yes"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "This method clusters similar data points to uncover patterns in a dataset. When it comes to facial features, k-means can be applied to detect patterns based on dimensions, positions, and shapes."
 
     # type: string
-    answers["(c)"] = ""
+    answers["(c)"] = "DBSCAN"
 
     return answers
 
