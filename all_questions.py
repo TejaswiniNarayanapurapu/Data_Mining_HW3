@@ -8,55 +8,55 @@ def question1():
     answers = {}
 
     # type: bool (True/False)
-    answers["(a)"] = 1
+    answers["(a)"] = True
 
     # type: explanatory string (at least four words)
     answers["(a) explain"] = "True, Agglomerative hierarchical clustering procedures are better able to handle outliers than k-means because they do not require an initial guess for cluster centroids"
 
     # type: bool (True/False)
-    answers["(b)"] = 0
+    answers["(b)"] = True
 
     # type: explanatory string (at least four words)
     answers["(b) explain"] = "Different runs of agglomerative hierarchical clustering procedures can also produce different clusterings due to variations in the merging process."
 
     # type: bool (True/False)
-    answers["(c)"] = 0
+    answers["(c)"] = False
 
     # type: explanatory string (at least four words)
     answers["(c) explain"] = "K-means clustering is not necessarily the most efficient clustering algorithm in terms of time and memory, as it depends on various factors such as data distribution and dimensionality"
 
     # type: bool (True/False)
-    answers["(d)"] = -1
+    answers["(d)"] = False
 
     # type: explanatory string (at least four words)
     answers["(d) explain"] = "During a post-processing step for K-means, when a cluster is split by picking one of the points as a new centroid, the SSE (Sum of Squared Errors) of the clustering typically increases. This is because splitting a cluster tends to redistribute points, potentially increasing the overall dispersion within the clusters and thus increasing the SSE."
 
     # type: bool (True/False)
-    answers["(e)"] = 0
+    answers["(e)"] = True
 
     # type: explanatory string (at least four words)
     answers["(e) explain"] = "When clustering a dataset using K-means, whenever SSE decreases, cohesion increases, not necessarily whenever SSE decreases."
 
     # type: bool (True/False)
-    answers["(f)"] = 1
+    answers["(f)"] = True
 
     # type: explanatory string (at least four words)
     answers["(f) explain"] = "When clustering a dataset using K-means, whenever SSB (the between sum of squares) increases, separation increases, as SSB measures the separation between clusters."
 
     # type: bool (True/False)
-    answers["(g)"] = 0
+    answers["(g)"] = False
 
     # type: explanatory string (at least four words)
     answers["(g) explain"] = "Cohesion and separation are not independent for K-means; improving cohesion (smaller SSE) can indeed improve separation (larger SSB), as they are complementary measures."
 
     # type: bool (True/False)
-    answers["(h)"] = 1
+    answers["(h)"] = True
 
     # type: explanatory string (at least four words)
     answers["(h) explain"] = " In K-means clustering, the sum of SSE (within-cluster sum of squares) and BSS (between sum of squares) is constant, as they collectively represent the total variance of the data"
 
     # type: bool (True/False)
-    answers["(i)"] = 0
+    answers["(i)"] = True
 
     # type: explanatory string (at least four words)
     answers["(i) explain"] = "Increasing cohesion (smaller SSE) in K-means clustering does not necessarily imply an increase in separation, as cohesion and separation are related but distinct concepts.
@@ -75,22 +75,22 @@ def question2():
     answers = {}
 
     # type: bool (True/False)
-    answers["(a)"] = -1
+    answers["(a)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "After the completion of the k-means algorithm, each shaded circle will be positioned around a single cluster centroid located at its center."
 
     # type: bool (True/False)
-    answers["(b)"] = -1
+    answers["(b)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "Once the k-means algorithm finishes, certain final clusters may contain points from both shaded regions."
 
     # type: bool (True/False)
-    answers["(c)"] = -1
+    answers["(c)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = ""
+    answers["(c) explain"] = "Upon completion of the k-means algorithm, the final clustering result may include a cluster that is empty."
 
     return answers
 
@@ -102,13 +102,13 @@ def question3():
     answers = {}
 
     # type: a string that evaluates to a float
-    answers["(a) SSE"] = 7.5
+    answers["(a) SSE"] = "4*R^2"
 
     # type: a string that evaluates to a float
-    answers["(b) SSE"] = 7.5
+    answers["(b) SSE"] = "4*squart(a^2+b^2)"
 
     # type: a string that evaluates to a float
-    answers["(c) SSE"] = 7.5
+    answers["(c) SSE"] = "10*R^2"
 
     return answers
 
