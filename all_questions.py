@@ -261,28 +261,28 @@ def question8():
     answers["(a) Matrix 1"] = "Dataset-z"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 1"] = ""
+    answers["(a) explain diag entries, Matrix 1"] = "The presence of blue denotes shorter distances, indicating distinct clusters with ample separation."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 1"] = ""
+    answers["(a) explain non-diag entries, Matrix 1"] = "Distinct color patterns imply alternative arrangements of clusters."
 
     # type: string
     answers["(a) Matrix 2"] = "Dataset-x"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 2"] = ""
+    answers["(a) explain diag entries, Matrix 2"] = "The blue denotes short distances, indicating clearly delineated clusters."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 2"] = ""
+    answers["(a) explain non-diag entries, Matrix 2"] = "All remaining colors signify long distances, suggesting distinct boundaries between clusters."
 
     # type: string
     answers["(a) Matrix 3"] = "Dataset-y"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 3"] = ""
+    answers["(a) explain diag entries, Matrix 3"] = "The diagonal entry corresponds to the distance of a point from itself."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 3"] = ""
+    answers["(a) explain non-diag entries, Matrix 3"] = "Certain areas marked by green and yellow signify overlapping or less defined clusters."
 
     # type: string
     answers["(b) Row 1"] = "Cluster-a"
