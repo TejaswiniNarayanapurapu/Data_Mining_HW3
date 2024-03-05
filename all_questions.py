@@ -294,16 +294,16 @@ def question8():
     answers["(b) Row 4"] = "Cluster-d"
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 1 explain"] = ""
+    answers["(b) Row 1 explain"] = "This row depicts a cluster or a set of points within the dataset. The colors in this row represent the distances between the points in the cluster. The different shades of blue, green, and red imply varying distances. In summary, Row A illustrates the distances among points within a particular cluster."
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 2 explain"] = ""
+    answers["(b) Row 2 explain"] = "Row B signifies an alternate set of points or a separate cluster within the dataset. The colors in this row depict distances between points within this second cluster. The patterns and intensities of colors might contrast with those in Row A. Row B pertains to the distances among points within a distinct cluster."
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 3 explain"] = ""
+    answers["(b) Row 3 explain"] = "Row C denotes a third grouping of points or a distinct cluster. The colors in this row unveil the distances between points within this third cluster. The arrangement of colors may differ. Row C reflects the distances among points within another cluster."
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 4 explain"] = ""
+    answers["(b) Row 4 explain"] = "Row D denotes a fourth collection of points or a separate cluster. The colors within this row signify distances between points in this fourth cluster. The overall pattern and distribution of colors set it apart from the other rows. Row D reflects the distances among points within a distinct cluster."
 
     return answers
 
@@ -330,7 +330,7 @@ def question9():
     answers["(e)"] = ['partitional', 'exclusive', 'complete']
 
     # type: explanatory string (at least four words)
-    answers["(e) explain"] = ""
+    answers["(e) explain"] = "The best approached using partitional clustering, as they are assigned to distinct groups based on their letter grades. Since each student is assigned to only one grade category, exclusive clustering would be appropriate."
 
     return answers
 
